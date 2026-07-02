@@ -39,4 +39,4 @@ A estrutura de HTML e CSS foi fornecida pelo professor, enquanto toda a lógica 
 
 ## 👨‍💻 Autor
 
-Bryan Cantídio
+Bryan Cantidio
