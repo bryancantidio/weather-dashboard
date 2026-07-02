@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <header>
+        <h1>🌤️ Pintou um clima...</h1>
+        <p>Consulta de clima utilizando Fetch API</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Busca -->
+        <section class="card">
+            <h2>Pesquisar Cidade</h2>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="cidade"
+                    placeholder="Digite uma cidade"
+                >
+
+                <button id="btnPesquisar">
+                    Pesquisar
+                </button>
+            </div>
+
+            <small id="mensagem"></small>
+        </section>
+
+        <!-- Resultado -->
+        <section class="card">
+            <h2>Clima Atual</h2>
+
+            <div id="resultado" class="resultado">
+
+                <div class="info">
+                    <span>Cidade</span>
+                    <strong id="nomeCidade">--</strong>
+                </div>
+
+                <div class="info">
+                    <span>Temperatura</span>
+                    <strong id="temperatura">-- °C</strong>
+                </div>
+
+                <div class="info">
+                    <span>Sensação Térmica</span>
+                    <strong id="sensacao">-- °C</strong>
+                </div>
+
+                <div class="info">
+                    <span>Umidade</span>
+                    <strong id="umidade">-- %</strong>
+                </div>
+
+                <div class="info">
+                    <span>Vento</span>
+                    <strong id="vento">-- km/h</strong>
+                </div>
+
+                <div class="info">
+                    <span>Data da Consulta</span>
+                    <strong id="dataConsulta">--</strong>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Estatísticas -->
+        <section class="card">
+            <h2>Estatísticas</h2>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <span>Total de Consultas</span>
+                    <strong id="totalConsultas">0</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Média de Temperaturas</span>
+                    <strong id="mediaTemp">0 °C</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Cidade Mais Quente</span>
+                    <strong id="cidadeQuente">--</strong>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Histórico -->
+        <section class="card">
+            <h2>Histórico de Pesquisas</h2>
+
+            <ul id="historico" class="historico">
+                <!-- JS adicionará itens aqui -->
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Fundamentos da Web - HTML5, CSS3 e JavaScript</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

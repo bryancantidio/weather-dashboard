@@ -1,0 +1,181 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header */
+
+header {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Layout */
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Cards */
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: #2563eb;
+}
+
+/* Busca */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 1rem;
+}
+
+.search-box button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+/* Resultado */
+
+.resultado {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.info {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.info span {
+    display: block;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.info strong {
+    font-size: 1.1rem;
+}
+
+/* Estatísticas */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.stat {
+    background: #eef4ff;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.stat strong {
+    font-size: 1.4rem;
+    color: #2563eb;
+}
+
+/* Histórico */
+
+.historico {
+    list-style: none;
+}
+
+.historico li {
+    padding: 12px;
+    margin-bottom: 10px;
+
+    border-left: 5px solid #2563eb;
+    background: #f8fafc;
+
+    border-radius: 6px;
+}
+
+/* Mensagem */
+
+#mensagem {
+    display: block;
+    margin-top: 10px;
+    color: #dc2626;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #666;
+}
+
+/* Responsivo */
+
+@media (max-width: 600px) {
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+}
